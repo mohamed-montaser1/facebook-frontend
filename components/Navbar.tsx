@@ -18,8 +18,8 @@ import ProfilePicture from "@/public/profile-picture.jpg";
 
 export default function Navbar() {
   return (
-    <nav className="flex p-4 justify-between items-center h-[56px] bg-[#252728]">
-      <div className="flex items-center gap-2">
+    <nav className="flex p-4 gap-3 justify-between items-center h-[56px] bg-[#252728]">
+      <div className="flex items-center gap-2 justify-center">
         <Logo />
         <SearchBar />
       </div>
@@ -31,15 +31,16 @@ export default function Navbar() {
 
 function SearchBar() {
   return (
-    <div className="flex items-center justify-center p-3 gap-2 w-[240px] h-[40px] bg-[#333334] rounded-full">
+    <div className="flex items-center justify-center p-3 gap-2 w-fit max-w-[240px] h-[40px] bg-[#333334] rounded-full">
       <FontAwesomeIcon
         icon={faSearch}
-        className="text-[#E2E5E9] w-[16px] aspect-square h-[40px] ml-1.5"
+        className="text-[#E2E5E9] w-[16px] aspect-square h-[40px] lg:ml-1.5"
       />
       <input
         type="text"
         placeholder="Search Facebook"
-        className="w-full h-[40px] bg-transparent outline-none text-[#E2E5E9]"
+        className="hidden lg:block w-full h-[40px] bg-transparent outline-none text-[#E2E5E9]"
+        name="search"
       />
     </div>
   );
@@ -70,7 +71,7 @@ const navbarItems: INavbarItemProps[] = [
 
 function NavbarItems() {
   return (
-    <div className="flex justify-center items-center gap-3">
+    <div className="hidden md:flex justify-center items-center gap-3">
       {navbarItems.map((el, i) => {
         return (
           <NavbarItem
@@ -95,7 +96,7 @@ function NavbarItem({ icon, title, active }: INavbarItemProps) {
   return (
     <div
       title={title}
-      className={`w-[130px] h-[45px] rounded-lg cursor-pointer hover:bg-[#3b3d3e] transition flex items-center justify-center ${
+      className={`w-fit p-5 lg:w-[130px] h-[45px] rounded-lg cursor-pointer hover:bg-[#3b3d3e] transition flex items-center justify-center ${
         active ? "navbar-item__active" : ""
       }`}
     >
