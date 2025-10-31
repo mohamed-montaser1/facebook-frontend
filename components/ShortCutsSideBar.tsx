@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function ShortCutsSideBar() {
   return (
-    <div className="shortcuts-sidebar mt-4 px-3">
-      <div className="shortcuts mb-2">
+    <div className="shortcuts-sidebar pt-4 h-[calc(100vh_-_56px)] px-3 relative">
+      <div className="shortcuts mb-3">
         <Shortcut
           image={ProfilePicture}
           title="Mohamed Montaser"
@@ -52,9 +52,6 @@ export default function ShortCutsSideBar() {
           />
         </div>
       </div>
-      <p className="text-slate-200 text-lg font-bold absolute bottom-3 left-1/2 -translate-x-1/2">
-        اللهم صل وسلم وبارك على نبينا محمد
-      </p>
     </div>
   );
 }
@@ -86,7 +83,7 @@ function Shortcut({ position, image, title, link }: IShortcutProps) {
           style={{ backgroundPosition: `0px ${position}px` }}
         />
       )}
-      <span className="text-slate-200 text-lg font-semibold">{title}</span>
+      <span className="text-slate-200 text-base font-semibold">{title}</span>
     </Link>
   );
 }

@@ -18,7 +18,7 @@ import ProfilePicture from "@/public/profile-picture.jpg";
 
 export default function Navbar() {
   return (
-    <nav className="flex p-4 gap-3 justify-between items-center h-[56px] bg-[#252728]">
+    <nav className="flex p-4 gap-3 justify-between items-center h-[56px] bg-[#252728] sticky top-0 z-[10000000000]">
       <div className="flex items-center gap-2 justify-center">
         <Logo />
         <SearchBar />
