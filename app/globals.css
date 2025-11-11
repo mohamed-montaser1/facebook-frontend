@@ -3,6 +3,8 @@
 @theme {
   --color-post: #252728;
   --color-hover: #3b3d3e;
+  --color-secondary: #b0b3b8;
+  --color-primary-text: #e2e5e9;
 }
 
 body {
