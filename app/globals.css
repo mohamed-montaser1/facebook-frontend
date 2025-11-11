@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --color-post: #252728;
+  --color-hover: #3b3d3e;
+}
+
 body {
   background-color: #1c1c1d;
 }

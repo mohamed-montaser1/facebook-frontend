@@ -96,7 +96,7 @@ function NavbarItem({ icon, title, active }: INavbarItemProps) {
   return (
     <div
       title={title}
-      className={`w-fit p-5 lg:w-[130px] h-[45px] rounded-lg cursor-pointer hover:bg-[#3b3d3e] transition flex items-center justify-center ${
+      className={`w-fit p-5 lg:w-[130px] h-[45px] rounded-lg cursor-pointer hover:bg-hover transition flex items-center justify-center ${
         active ? "navbar-item__active" : ""
       }`}
     >

@@ -10,7 +10,7 @@ import Photos from "@/public/photos.png";
 export default function CreatePost() {
   return (
     <div className="create-new-post">
-      <Container className="bg-[#252728] rounded-xl">
+      <Container className="bg-post rounded-xl">
         <div className="create-new-post__main flex items-center gap-3">
           <Image
             src={ProfilePicture}
