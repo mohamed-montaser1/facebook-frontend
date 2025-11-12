@@ -2,6 +2,7 @@
 
 @theme {
   --color-post: #252728;
+  --color-comment: #333334;
   --color-hover: #3b3d3e;
   --color-secondary: #b0b3b8;
   --color-primary-text: #e2e5e9;
@@ -26,4 +27,12 @@ body {
 
 .post__controls-btn {
   @apply flex justify-center items-center gap-1 p-2 font-semibold w-full rounded-lg hover:bg-primary-text/35 transition-colors duration-200 cursor-pointer;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
