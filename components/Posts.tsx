@@ -126,11 +126,9 @@ const posts_fake: TPost[] = [
 export default function Posts() {
   return (
     <>
-      <Container>
-        {posts_fake.map((post) => (
-          <Post key={post._id} post={post} />
-        ))}
-      </Container>
+      {posts_fake.map((post) => (
+        <Post key={post._id} post={post} />
+      ))}
     </>
   );
 }

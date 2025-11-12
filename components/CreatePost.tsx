@@ -2,7 +2,6 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 import ProfilePicture from "@/public/profile-picture.jpg";
 import Container from "./ContentContainer";
-import SidebarIcons from "@/public/sidebar-icons.png";
 import Live from "@/public/live.png";
 import Feelings from "@/public/feelings.png";
 import Photos from "@/public/photos.png";
